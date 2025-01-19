@@ -2,6 +2,8 @@
 
 "**Flying Injera**" is a fun and culturally immersive 2D side-scrolling game where players control a flying piece of injera through Ethiopian landscapes while avoiding obstacles and collecting power-ups. This game is built with **HTML**, **CSS**, and **JavaScript**, and is tailored to showcase Ethiopian culture and traditions.
 
+This project  [✅demo](https://aastu-group-4.github.io/floppy-bird/). 
+
 ---
 
 ## Features
