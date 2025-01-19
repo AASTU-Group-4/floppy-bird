@@ -5,9 +5,9 @@ class Background {
   
       // Background layers
       this.layers = [
-        { image: this.loadImage("./assets/images/bg.png"), speed: 0.5 },
-        { image: this.loadImage("./assets/images/bg.png"), speed: 1.0 },
-        { image: this.loadImage("./assets/images/bg.png"), speed: 1.5 },
+        { image: this.loadImage("assets/images/bg.png"), speed: 0.5 },
+        { image: this.loadImage("assets/images/bg.png"), speed: 1.0 },
+        { image: this.loadImage("assets/images/bg.png"), speed: 1.5 },
       ];
   
       // Track the x position of each layer
