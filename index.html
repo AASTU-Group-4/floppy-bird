@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flying Injera</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="gameCanvas" width="1300px" height="850px"></canvas>
+
+  <!-- Start Screen -->
+  <div id="startScreen" class="overlay">
+    <div class="message">Welcome to Flappy Bird!</div>
+    <button class="button" id="startButton">Start Game</button>
+  </div>
+
+  <!-- Game Over Screen -->
+  <div id="gameOverScreen" class="overlay hidden">
+    <div class="message">Game Over!</div>
+    <div id="finalScore" class="score"></div>
+    <button class="button" id="restartButton">Restart Game</button>
+  </div>
+
+  <!-- Pause Screen -->
+  <div id="pauseScreen" class="overlay hidden">
+    <div class="message">Game Paused</div>
+    <button class="button" id="resumeButton">Resume</button>
+  </div>
+  <script defer type="module" src="js/main.js"></script>
+</body>
+</html>
