@@ -2,15 +2,22 @@ class Background {
     constructor(ctx, canvasSize) {
       this.ctx = ctx;
       this.canvasSize = canvasSize;
-  
+      let src;
+
+      // Check if we're on GitHub Pages or locally
+      if (window.location.hostname === "aastu-group-4.github.io") {
+        src = "/floppy-bird/assets/images"; // GitHub Pages
+      } else {
+        src = "assets/images"; // Local development
+      }
+      
       // Background layers
       this.layers = [
-        { image: this.loadImage("assets/images/bg.png"), speed: 0.5 },
-        { image: this.loadImage("assets/images/bg.png"), speed: 1.0 },
-        { image: this.loadImage("assets/images/bg.png"), speed: 1.5 },
+        { image: this.loadImage(`${src}/bg.png`), speed: 0.5 },
+        { image: this.loadImage(`${src}/bg.png`), speed: 1.0 },
+        { image: this.loadImage(`${src}/bg.png`), speed: 1.5 },
       ];
-  
-      // Track the x position of each layer
+
       this.layerPositions = Array(this.layers.length).fill(0);
     }
   
